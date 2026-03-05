@@ -1,27 +1,25 @@
 import gsap from "gsap";
 
 /**
- * Splits a text string into individual <span> elements inside a container.
- * Returns the spans so they can be animated.
+ * Finds the <span> elements already created by React inside the targeted container.
  */
-function splitIntoCharSpans(selector: string): HTMLElement[] {
+function getCharSpans(selector: string): HTMLElement[] {
   const elements = document.querySelectorAll<HTMLElement>(selector);
   const spans: HTMLElement[] = [];
   elements.forEach((el) => {
-    const text = el.innerText;
-    el.innerHTML = "";
-    text.split("").forEach((char) => {
-      const span = document.createElement("span");
-      span.style.display = "inline-block";
-      span.textContent = char === " " ? "\u00A0" : char;
-      el.appendChild(span);
+    el.querySelectorAll("span").forEach((span) => {
       spans.push(span);
     });
   });
   return spans;
 }
 
+let isInitialFXRun = false;
+
 export function initialFX() {
+  if (isInitialFXRun) return;
+  isInitialFXRun = true;
+
   document.body.style.overflowY = "auto";
   document.getElementsByTagName("main")[0].classList.add("main-active");
 
@@ -32,7 +30,7 @@ export function initialFX() {
   });
 
   // Animate landing heading characters
-  const landingChars = splitIntoCharSpans(
+  const landingChars = getCharSpans(
     ".landing-info h3, .landing-intro h2, .landing-intro h1"
   );
   gsap.fromTo(
@@ -50,10 +48,10 @@ export function initialFX() {
   );
 
   // Split texts for caching and loop so we don't duplicate spans later
-  const text1Chars = splitIntoCharSpans(".landing-h2-info");
-  const text2Chars = splitIntoCharSpans(".landing-h2-info-1");
-  const text3Chars = splitIntoCharSpans(".landing-h2-1");
-  const text4Chars = splitIntoCharSpans(".landing-h2-2");
+  const text1Chars = getCharSpans(".landing-h2-info");
+  const text2Chars = getCharSpans(".landing-h2-info-1");
+  const text3Chars = getCharSpans(".landing-h2-1");
+  const text4Chars = getCharSpans(".landing-h2-2");
 
   // Hide the secondary texts immediately so they don't overlap on load
   gsap.set([text2Chars, text4Chars], { opacity: 0, y: 80 });
