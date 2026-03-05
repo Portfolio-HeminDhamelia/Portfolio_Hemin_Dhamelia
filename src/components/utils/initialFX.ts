@@ -49,10 +49,18 @@ export function initialFX() {
     }
   );
 
-  // Animate h2 info chars
-  const h2InfoChars = splitIntoCharSpans(".landing-h2-info");
+  // Split texts for caching and loop so we don't duplicate spans later
+  const text1Chars = splitIntoCharSpans(".landing-h2-info");
+  const text2Chars = splitIntoCharSpans(".landing-h2-info-1");
+  const text3Chars = splitIntoCharSpans(".landing-h2-1");
+  const text4Chars = splitIntoCharSpans(".landing-h2-2");
+
+  // Hide the secondary texts immediately so they don't overlap on load
+  gsap.set([text2Chars, text4Chars], { opacity: 0, y: 80 });
+
+  // Animate h2 info chars (First word: Developer)
   gsap.fromTo(
-    h2InfoChars,
+    text1Chars,
     { opacity: 0, y: 80, filter: "blur(5px)" },
     {
       opacity: 1,
@@ -89,11 +97,6 @@ export function initialFX() {
   );
 
   // Loop texts
-  const text1Chars = splitIntoCharSpans(".landing-h2-info");
-  const text2Chars = splitIntoCharSpans(".landing-h2-info-1");
-  const text3Chars = splitIntoCharSpans(".landing-h2-1");
-  const text4Chars = splitIntoCharSpans(".landing-h2-2");
-
   LoopText(text1Chars, text2Chars);
   LoopText(text3Chars, text4Chars);
 }
