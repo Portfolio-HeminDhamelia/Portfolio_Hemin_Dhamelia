@@ -46,7 +46,6 @@ function wrapWords(el: AnimatedElement): HTMLSpanElement[] {
     const span = document.createElement("span");
     span.style.display = "inline-block";
     span.textContent = word + (i < arr.length - 1 ? "\u00A0" : "");
-    el.innerHTML = "";
     el.appendChild(span);
     spans.push(span);
   });
