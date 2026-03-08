@@ -58,7 +58,13 @@ const Work = () => {
               title: "HireReady",
               category: "Full Stack / AI",
               tools: "React, FastAPI, PostgreSQL, Supabase, GPT-4o, JWT",
-              link: "https://github.com/HireReady-Team-2/HireReady"
+              link: "https://github.com/HireReady-Team-2/HireReady",
+              images: [
+                "/images/hireready-ready-to-practice.png",
+                "/images/hireready-active-session.png",
+                "/images/hireready-interview-history.png",
+                "/images/hireready-login.png"
+              ]
             },
             {
               title: "Cloud-Native Web App",
@@ -112,7 +118,7 @@ const Work = () => {
                 <h4>Tools and features</h4>
                 <p>{project.tools}</p>
               </div>
-              <WorkImage image="/images/placeholder.webp" alt={project.title} />
+              <WorkImage image={project.images || "/images/placeholder.webp"} alt={project.title} />
             </div>
           ))}
         </div>

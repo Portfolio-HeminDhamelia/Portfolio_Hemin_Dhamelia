@@ -1,8 +1,8 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { MdArrowOutward } from "react-icons/md";
 
 interface Props {
-  image: string;
+  image: string | string[];
   alt?: string;
   video?: string;
   link?: string;
@@ -11,6 +11,20 @@ interface Props {
 const WorkImage = (props: Props) => {
   const [isVideo, setIsVideo] = useState(false);
   const [video, setVideo] = useState("");
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
+  const images = Array.isArray(props.image) ? props.image : [props.image];
+
+  useEffect(() => {
+    let interval: NodeJS.Timeout;
+    if (images.length > 1) {
+      interval = setInterval(() => {
+        setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
+      }, 3000); // Change image every 3 seconds
+    }
+    return () => clearInterval(interval);
+  }, [images.length]);
+
   const handleMouseEnter = async () => {
     if (props.video) {
       setIsVideo(true);
@@ -36,7 +50,25 @@ const WorkImage = (props: Props) => {
             <MdArrowOutward />
           </div>
         )}
-        <img src={props.image} alt={props.alt} />
+        <div className="slideshow-container" style={{ width: '100%', height: '100%', position: 'relative', overflow: 'hidden' }}>
+          {images.map((img, index) => (
+             <img 
+               key={index} 
+               src={img} 
+               alt={`${props.alt} ${index + 1}`} 
+               style={{ 
+                 opacity: currentImageIndex === index ? 1 : 0, 
+                 transition: 'opacity 0.5s ease-in-out',
+                 position: index === 0 ? 'relative' : 'absolute',
+                 top: 0,
+                 left: 0,
+                 width: '100%',
+                 height: '100%',
+                 objectFit: 'cover'
+               }} 
+             />
+          ))}
+        </div>
         {isVideo && <video src={video} autoPlay muted playsInline loop></video>}
       </a>
     </div>
