@@ -67,10 +67,28 @@ const Work = () => {
               ]
             },
             {
+              title: "Personal Portfolio Website",
+              category: "Full Stack",
+              tools: "React, TypeScript, Three.js, GSAP, Supabase, Clerk, Vercel",
+              link: "https://github.com/Portfolio-HeminDhamelia/Portfolio_Hemin_Dhamelia",
+              images: [
+                "/images/portfolio-1.png",
+                "/images/portfolio-2.png",
+                "/images/portfolio-3.png",
+                "/images/portfolio-4.png",
+                "/images/portfolio-5.png",
+                "/images/portfolio-6.png"
+              ]
+            },
+            {
               title: "Cloud-Native Web App",
               category: "Cloud / DevOps",
               tools: "Node.js, Express, PostgreSQL RDS, GitHub Actions, AWS",
-              link: "https://github.com/orgs/HeminDhameliaOrg/repositories"
+              link: "https://github.com/orgs/HeminDhameliaOrg/repositories",
+              images: [
+                "/images/cloudnative-1.png",
+                "/images/cloudnative-2.png"
+              ]
             },
             {
               title: "Multi-Account AWS Infrastructure",
@@ -95,18 +113,6 @@ const Work = () => {
                 "/images/aws-3.png",
                 "/images/aws-4.png"
               ]
-            },
-            {
-              title: "Personal Portfolio Website",
-              category: "Frontend / Full Stack",
-              tools: "React, TypeScript, Three.js, GSAP, Supabase, Clerk, Vercel",
-              link: "https://github.com/Portfolio-HeminDhamelia/Portfolio_Hemin_Dhamelia"
-            },
-            {
-              title: "IaC Infrastructure Platform",
-              category: "Cloud / Security",
-              tools: "Terraform, AWS, KMS, IAM, CloudFormation, SOC2",
-              link: "https://github.com/Hemin-Dhamelia"
             }
           ].map((project, index) => (
             <div className="work-box" key={index}>
