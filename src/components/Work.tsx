@@ -76,19 +76,25 @@ const Work = () => {
               title: "Multi-Account AWS Infrastructure",
               category: "Cloud Infrastructure",
               tools: "Terraform, AWS, SNS, Lambda, KMS, IAM, SendGrid",
-              link: "https://github.com/orgs/HeminDhameliaOrg/repositories"
+              link: "https://github.com/orgs/HeminDhameliaOrg/repositories",
+              images: [
+                "/images/aws-1.png",
+                "/images/aws-2.png",
+                "/images/aws-3.png",
+                "/images/aws-4.png"
+              ]
             },
             {
               title: "Serverless AWS Lambda Platform",
               category: "Cloud / Serverless",
               tools: "AWS Lambda, API Gateway, S3, DynamoDB, GitHub Actions",
-              link: "https://github.com/orgs/HeminDhameliaOrg/repositories"
-            },
-            {
-              title: "CI/CD Pipeline Automation",
-              category: "DevOps",
-              tools: "GitHub Actions, Docker, AWS EC2, AMI, Lambda",
-              link: "https://github.com/Hemin-Dhamelia"
+              link: "https://github.com/orgs/HeminDhameliaOrg/repositories",
+              images: [
+                "/images/aws-1.png",
+                "/images/aws-2.png",
+                "/images/aws-3.png",
+                "/images/aws-4.png"
+              ]
             },
             {
               title: "Personal Portfolio Website",
