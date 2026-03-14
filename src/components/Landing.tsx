@@ -37,7 +37,11 @@ const Landing = ({ children }: PropsWithChildren) => {
       <div className="landing-section" id="landingDiv">
         <div className="landing-container">
           <div className="landing-intro">
-            <h2>Hello! I'm</h2>
+            <h2>
+              Hello!{displayCount > 0 && (
+                <> Visitor {displayCount},</>
+              )} I'm
+            </h2>
             <h1>
               HEMIN
               <br />
@@ -51,11 +55,6 @@ const Landing = ({ children }: PropsWithChildren) => {
             </h2>
           </div>
         </div>
-        {displayCount > 0 && (
-          <div className="visitor-counter">
-            <span className="visitor-counter-number">Visitor No. {displayCount.toLocaleString()}</span>
-          </div>
-        )}
         {children}
       </div>
     </>
