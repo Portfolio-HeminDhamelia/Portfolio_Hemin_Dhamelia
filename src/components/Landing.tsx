@@ -38,10 +38,10 @@ const Landing = ({ children }: PropsWithChildren) => {
         <div className="landing-container">
           <div className="landing-intro">
             <h2>
-              Hello! Visitor <span className="visitor-number">{displayCount > 0 ? displayCount : "__"}</span>,
+              Hello! Visitor <span className="visitor-number" style={{ color: "#ffffff" }}>{displayCount > 0 ? displayCount : "__"}</span>,
             </h2>
             <h1>
-              I am
+              <span style={{ color: "#c481ff" }}>I am</span>
               <br />
               Hemin
               <br />
