@@ -15,10 +15,10 @@ const textureLoader = new THREE.TextureLoader();
 const imageUrls = [
   "/images/react2.webp",
   "/images/python.png",
-  "/images/terraform.png",
-  "/images/css.png",
-  "/images/docker.png",
-  "/images/kubernetes.png",
+  "/images/terraform.svg",
+  "/images/css.svg",
+  "/images/docker.svg",
+  "/images/kubernetes.svg",
   "/images/github.png"
 ];
 const textures = imageUrls.map((url) => textureLoader.load(url));
