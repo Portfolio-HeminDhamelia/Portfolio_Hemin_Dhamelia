@@ -16,7 +16,7 @@ This portfolio is designed to showcase my skills, projects, and career experienc
 - **Authentication:** [Clerk](https://clerk.com/)
 - **Database Backend:** [Supabase](https://supabase.com/)
 
-## � Getting Started
+## � Getting Started.
 
 ### Prerequisites
 
