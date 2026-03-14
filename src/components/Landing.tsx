@@ -40,9 +40,8 @@ const Landing = ({ children }: PropsWithChildren) => {
             <h2>
               Hello! Visitor <span className="visitor-number" style={{ color: "#ffffff" }}>{displayCount > 0 ? displayCount : "__"}</span>,
             </h2>
+            <h2>I am</h2>
             <h1>
-              <span style={{ color: "#c481ff" }}>I am</span>
-              <br />
               Hemin
               <br />
               Dhamelia
@@ -51,7 +50,7 @@ const Landing = ({ children }: PropsWithChildren) => {
           <div className="landing-info">
             <h3>A Creative</h3>
             <h2 className="landing-info-h2">
-              Developer & Engineer
+              Developer <span style={{ color: "#c481ff" }}>&</span> Engineer
             </h2>
           </div>
         </div>
