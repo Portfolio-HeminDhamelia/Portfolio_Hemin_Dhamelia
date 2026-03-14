@@ -355,12 +355,12 @@ h2.landing-info-h2 {
 }
 
 .visitor-counter-number {
-  font-family: "Geist", monospace;
-  font-size: 13px;
-  font-weight: 400;
+  font-family: "Geist", sans-serif;
+  font-size: 12px;
+  font-weight: 600;
   color: #c481ff;
   line-height: 1;
-  letter-spacing: 1.5px;
+  letter-spacing: 1px;
   text-transform: uppercase;
   white-space: nowrap;
 }
