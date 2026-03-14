@@ -342,3 +342,44 @@ h2.landing-info-h2 {
     font-size: 75px;
   }
 }
+
+/* Visitor Counter */
+.visitor-counter {
+  position: absolute;
+  bottom: 30px;
+  right: 0;
+  z-index: 12;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  animation: counterFadeIn 0.8s ease forwards;
+}
+
+.visitor-counter-number {
+  font-family: "Geist", monospace;
+  font-size: 28px;
+  font-weight: 600;
+  color: #c481ff;
+  line-height: 1;
+  letter-spacing: 2px;
+}
+
+.visitor-counter-label {
+  font-size: 11px;
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.45);
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-top: 3px;
+}
+
+@keyframes counterFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
