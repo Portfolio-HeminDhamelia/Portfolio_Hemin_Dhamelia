@@ -345,38 +345,30 @@ h2.landing-info-h2 {
 
 /* Visitor Counter */
 .visitor-counter {
-  position: absolute;
-  bottom: 30px;
-  right: 0;
-  z-index: 12;
+  position: fixed;
+  top: 24px;
+  left: 100px;
+  z-index: 100;
   display: flex;
-  flex-direction: column;
-  align-items: flex-end;
+  align-items: center;
   animation: counterFadeIn 0.8s ease forwards;
 }
 
 .visitor-counter-number {
   font-family: "Geist", monospace;
-  font-size: 28px;
-  font-weight: 600;
+  font-size: 13px;
+  font-weight: 400;
   color: #c481ff;
   line-height: 1;
-  letter-spacing: 2px;
-}
-
-.visitor-counter-label {
-  font-size: 11px;
-  font-weight: 300;
-  color: rgba(255, 255, 255, 0.45);
-  letter-spacing: 3px;
+  letter-spacing: 1.5px;
   text-transform: uppercase;
-  margin-top: 3px;
+  white-space: nowrap;
 }
 
 @keyframes counterFadeIn {
   from {
     opacity: 0;
-    transform: translateY(8px);
+    transform: translateY(-4px);
   }
   to {
     opacity: 1;

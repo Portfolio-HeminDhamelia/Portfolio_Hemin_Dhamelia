@@ -53,8 +53,7 @@ const Landing = ({ children }: PropsWithChildren) => {
         </div>
         {displayCount > 0 && (
           <div className="visitor-counter">
-            <span className="visitor-counter-number">{displayCount.toLocaleString()}</span>
-            <span className="visitor-counter-label">visitors</span>
+            <span className="visitor-counter-number">Visitor No. {displayCount.toLocaleString()}</span>
           </div>
         )}
         {children}
