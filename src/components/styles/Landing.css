@@ -218,11 +218,12 @@
 }
 h2.landing-info-h2 {
   color: #ffffff;
-  font-size: 42px;
+  font-size: 28px;
+  line-height: 28px;
   width: 100%;
   margin: 0;
   font-family: "Geist", sans-serif;
-  font-weight: 600;
+  font-weight: 500;
   position: relative;
   margin-left: -5px;
 }
@@ -252,7 +253,8 @@ h2.landing-info-h2 {
     line-height: 40px;
   }
   h2.landing-info-h2 {
-    font-size: 38px;
+    font-size: 30px;
+    line-height: 30px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -274,7 +276,8 @@ h2.landing-info-h2 {
     line-height: 42px;
   }
   h2.landing-info-h2 {
-    font-size: 55px;
+    font-size: 40px;
+    line-height: 35px;
   }
 }
 @media screen and (min-width: 1025px) {
@@ -339,6 +342,7 @@ h2.landing-info-h2 {
     line-height: 62px;
   }
   h2.landing-info-h2 {
-    font-size: 75px;
+    font-size: 60px;
+    line-height: 55px;
   }
 }
