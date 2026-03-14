@@ -38,14 +38,14 @@ const Landing = ({ children }: PropsWithChildren) => {
         <div className="landing-container">
           <div className="landing-intro">
             <h2>
-              Hello!{displayCount > 0 && (
-                <> Visitor {displayCount},</>
-              )} I'm
+              Hello! Visitor <span className="visitor-number">{displayCount > 0 ? displayCount : "__"}</span>,
             </h2>
             <h1>
-              HEMIN
+              I am
               <br />
-              DHAMELIA
+              Hemin
+              <br />
+              Dhamelia
             </h1>
           </div>
           <div className="landing-info">
