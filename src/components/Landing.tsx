@@ -50,11 +50,9 @@ const Landing = ({ children }: PropsWithChildren) => {
           <div className="landing-info">
             <h3>A Creative</h3>
             <h2 className="landing-info-h2">
-              Developer
-              <br />
+              <span>Developer</span>
               <span style={{ color: "#c481ff" }}>&</span>
-              <br />
-              Engineer
+              <span>Engineer</span>
             </h2>
           </div>
         </div>

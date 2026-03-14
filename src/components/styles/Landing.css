@@ -219,7 +219,7 @@
 h2.landing-info-h2 {
   color: #ffffff;
   font-size: 28px;
-  line-height: 38px;
+  line-height: 1.1;
   width: 100%;
   margin: 0;
   font-family: "Geist", sans-serif;
@@ -256,7 +256,7 @@ h2.landing-info-h2 {
   }
   h2.landing-info-h2 {
     font-size: 30px;
-    line-height: 30px;
+    line-height: 1.1;
   }
 }
 @media screen and (min-width: 768px) {
@@ -279,7 +279,7 @@ h2.landing-info-h2 {
   }
   h2.landing-info-h2 {
     font-size: 40px;
-    line-height: 35px;
+    line-height: 1.1;
   }
 }
 @media screen and (min-width: 1025px) {
@@ -345,6 +345,6 @@ h2.landing-info-h2 {
   }
   h2.landing-info-h2 {
     font-size: 60px;
-    line-height: 55px;
+    line-height: 1.1;
   }
 }
