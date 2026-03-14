@@ -347,7 +347,7 @@ h2.landing-info-h2 {
 .visitor-counter {
   position: fixed;
   top: 0;
-  left: 100px;
+  left: 70px;
   height: 60px;
   z-index: 100;
   display: flex;
@@ -358,17 +358,26 @@ h2.landing-info-h2 {
 .visitor-counter-number {
   font-family: "Geist", sans-serif;
   font-size: 14px;
-  font-weight: 600;
+  font-weight: 700;
   color: #eae5ec;
   line-height: 1;
-  letter-spacing: 1px;
+  letter-spacing: 0.2px;
   text-transform: uppercase;
   white-space: nowrap;
+}
+
+@media screen and (min-width: 500px) {
+  .visitor-counter-number {
+    font-size: 16px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
   .visitor-counter {
     height: 90px;
+  }
+  .visitor-counter-number {
+    font-size: 18px;
   }
 }
 
