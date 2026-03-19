@@ -17,7 +17,7 @@ const Career = () => {
                 <h4>Teaching Assistant — Software Quality Control & Management</h4>
                 <h5>Northeastern University</h5>
               </div>
-              <h3>Aug 2024 — Present</h3>
+              <h3>Aug 2025 — Present</h3>
             </div>
             <p>
               Spearheaded instruction for 40+ students in Software Quality Control & Management, designing hands-on assignments in functional testing and automation that improved completion accuracy by 30%. Mentored students in test automation frameworks using Selenium and Katalon Studio, reducing debugging resolution time by 40%. Formulated testing curricula bridging QA theory with DevOps strategies, increasing practical assessment scores by 25%.
