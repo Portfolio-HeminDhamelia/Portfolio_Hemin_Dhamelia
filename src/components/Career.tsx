@@ -14,10 +14,22 @@ const Career = () => {
           <div className="career-info-box">
             <div className="career-info-in">
               <div className="career-role">
+                <h4>Lead Software Engineer</h4>
+                <h5>Vindex Privatus PLLC</h5>
+              </div>
+              <h3>Aug 2026 — Present</h3>
+            </div>
+            <p>
+              Led architecture and full-stack development of Vindex Privatus PLLC's internal Case Management Software as sole Lead Software Engineer, shipping new AI-powered features across the SQL data layer and JavaScript application logic firmwide. Automated CI/CD pipelines in GitHub Actions using YML workflow configs and Selenium test suites, gating every deployment to catch regressions before new features reached production. Deployed the firm's Case Management Software to Netlify under a custom registered domain, configuring and provisioning a brand-new subdomain end to end to support expanding functionality as the fast-growing firm scaled operations.
+            </p>
+          </div>
+          <div className="career-info-box">
+            <div className="career-info-in">
+              <div className="career-role">
                 <h4>Teaching Assistant — Software Quality Control & Management</h4>
                 <h5>Northeastern University</h5>
               </div>
-              <h3>Aug 2025 — Present</h3>
+              <h3>Aug 2025 — May 2026</h3>
             </div>
             <p>
               Spearheaded instruction for 40+ students in Software Quality Control & Management, designing hands-on assignments in functional testing and automation that improved completion accuracy by 30%. Mentored students in test automation frameworks using Selenium and Katalon Studio, reducing debugging resolution time by 40%. Formulated testing curricula bridging QA theory with DevOps strategies, increasing practical assessment scores by 25%.
@@ -53,7 +65,7 @@ const Career = () => {
               <h3>Aug 2024 — May 2026</h3>
             </div>
             <p>
-              Currently pursuing MS in Information Systems with a GPA of 3.53. Coursework includes Cloud Computing, Database Management and Database Design, CI/CD, Containerization, and Microservices. Expected graduation May 2026.
+              Graduated with a Master of Science in Information Systems with a GPA of 3.63. Coursework included Cloud Computing, Database Management and Database Design, CI/CD, Containerization, and Microservices.
             </p>
           </div>
           <div className="career-info-box">
