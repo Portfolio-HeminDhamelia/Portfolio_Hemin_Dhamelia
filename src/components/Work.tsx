@@ -55,6 +55,15 @@ const Work = () => {
         <div className="work-flex">
           {[
             {
+              title: "TerminalForge",
+              category: "Multi-Agent AI / Full Stack",
+              tools: "React/Ink, Node.js, Express, Python, Whisper, Claude, Ollama",
+              link: "https://github.com/TerminalForgeAI/TerminalForgeAI",
+              images: [
+                "/images/placeholder.webp"
+              ]
+            },
+            {
               title: "HireReady",
               category: "Full Stack / AI",
               tools: "React, FastAPI, PostgreSQL, Supabase, GPT-4o, JWT",
